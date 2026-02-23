@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <search>
+        <div class="input-box">
+          <label for="city">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+          <input
+            type="text"
+            class="city-name"
+            id="city"
+            placeholder="Digite o nome da cidade..."
+          />
+          <button class="button-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </search>
+
+      <main class="main hidden">
+        <div class="local-info">
+          <img class="flag" src="https://flagsapi.com/BR/flat/32.png" />
+          <p class="local-name">Campos do Jordão, BR</p>
+        </div>
+
+        <p class="local-date">27 de abril - Terça-feira</p>
+
+        <div class="info-temp">
+          <p class="temp">18°C</p>
+          <p class="description">Nublado</p>
+          <p class="feels">Sensação de 17°C</p>
+        </div>
+
+        <div class="elements">
+          <div class="element">
+            <div class="title">
+              <i class="fa-solid fa-droplet" style="color: #8ccbfc"></i>
+              <p>Umidade</p>
+            </div>
+            <p class="result humidity">94%</p>
+          </div>
+
+          <div class="element">
+            <div class="title">
+              <i class="fa-solid fa-wind" style="color: #d4d4d4"></i>
+              <p>Vento</p>
+            </div>
+            <p class="result wind">5 km/h</p>
+          </div>
+
+          <div class="element">
+            <div class="title">
+              <i class="fa-solid fa-cloud-sun" style="color: #e7ab74"></i>
+              <p>Pôr do Sol</p>
+            </div>
+            <p class="result sunset">18:05</p>
+          </div>
+        </div>
+
+        <img
+          class="icon"
+          src="https://rodrigokamada.github.io/openweathermap/images/10d_t@4x.png"
+        />
+      </main>
+
+      <div class="error hidden">
+        <img src="assets/404.svg" />
+        <h2>Cidade não encontrada</h2>
+        <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
+      </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
