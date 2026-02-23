@@ -217,7 +217,7 @@ main {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   body {
     background-size: auto;
   }
@@ -225,7 +225,7 @@ main {
   .element {
     padding: 10px;
     gap: 10px;
-    width: 100px;
+    width: 130px;
   }
 
   .title i {
@@ -243,17 +243,18 @@ main {
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 500px) {
   main {
     padding: 20px 10px;
   }
 
   .elements {
-    gap: 10px;
+    gap: 5px;
   }
 
   .element {
-    padding: 0px;
+    padding: 6px 0px;
+    width: 110px;
   }
 
   .result {
@@ -261,6 +262,8 @@ main {
   }
 
   .icon {
-    right: -60px;
+    top: 20px;
+    right: -30px;
+    height: 250px;
   }
 }

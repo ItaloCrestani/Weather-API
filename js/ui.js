@@ -49,8 +49,7 @@ export function renderDate(weather) {
   const date = new Date(utcTime + weather.timezone * 1000);
 
   localDate.innerHTML = `${date.getUTCDate().toString().padStart(2, "0")} de ${formatMonth(date)} - 
-  ${formatDay(date)} 
-  ${date.getUTCHours().toString().padStart(2, "0")}:${date.getUTCMinutes().toString().padStart(2, "0")}`;
+  ${formatDay(date)}`;
 }
 
 export function renderTemp(weather) {
