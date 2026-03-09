@@ -19,4 +19,4 @@ O projeto foi desenvolvido com HTML, CSS e JavaScript puro, consumindo dados de 
 
 ## 💻 Projeto
 
-- [Acesse o projeto finalizado, online](https://italocrestani.github.io/Weather-API/)
+- [Acesse o projeto finalizado, online](https://italocrestani.github.io/Weather-app/)
